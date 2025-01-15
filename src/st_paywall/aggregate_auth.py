@@ -57,7 +57,7 @@ def require_auth(
     elif is_subscriber:
         st.session_state.user_subscribed = True
 
-    if st.sidebar.button("Logout", type="primary"):
+    if st.sidebar.button("Logout", type="primary", use_container_width=True):
         del st.session_state.email
         del st.session_state.user_subscribed
         st.rerun()
