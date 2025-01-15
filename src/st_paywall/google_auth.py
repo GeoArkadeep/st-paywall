@@ -56,7 +56,7 @@ def markdown_button(
             border-radius: 0.25rem;
             margin: 0px;
             line-height: 1.6;
-            width: auto;
+            width: 100%;
             user-select: none;
             background-color: {color};
             color: rgb(255, 255, 255);
