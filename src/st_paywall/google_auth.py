@@ -53,9 +53,9 @@ def markdown_button(
             justify-content: center;
             font-weight: 400;
             padding: 0.25rem 0.75rem;
-            border-radius: 0.25rem;
+            border-radius: 0.75rem;
             margin: 0px;
-            line-height: 1.6;
+            line-height: 1.8;
             width: 100%;
             user-select: none;
             background-color: {color};
