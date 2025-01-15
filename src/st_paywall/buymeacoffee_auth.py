@@ -5,11 +5,12 @@ import streamlit as st
 
 def extract_payer_emails(json_response):
     payer_emails = []
-    print(json_response)
+    # Handle the "No subscriptions" error case
+    if "error" in json_response:
+        return payer_emails
     for item in json_response["data"]:
         payer_email = item["payer_email"]
         payer_emails.append(payer_email)
-
     return payer_emails
 
 
